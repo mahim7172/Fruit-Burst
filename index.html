@@ -17,6 +17,8 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/129ec46476.js" crossorigin="anonymous"></script>
 
     <title>Fruit Burst</title>
     <style>
@@ -28,7 +30,7 @@
   <body class="lato">
     <header>
       <section class="container mx-auto">
-        <div class="navbar bg-[#F85559] rounded-full px-10 py-6">
+        <div class="hidden lg:block lg:flex navbar bg-[#F85559] rounded-full px-10 py-2">
           <div class="navbar-start">
             <ul class="flex font-medium text-white gap-7">
               <li><a>Home</a></li>
@@ -47,12 +49,9 @@
                 type="text"
                 placeholder="Search here"
                 class="input input-bordered w-24 relative md:w-auto rounded-full"
+                
               />
-              <img
-                class="w-7 absolute right-10"
-                src="./images/Frame.svg"
-                alt=""
-              />
+            
             </div>
           </div>
         </div>
@@ -66,7 +65,7 @@
             <!-- slider 1 -->
             <div id="slide1" class="carousel-item relative w-full">
               <div
-                class="hero min-h-screen"
+                class="hero min-h-screen "
                 style="background-image: url(./images/banner1.png)"
               >
                 <div class="hero-overlay bg-opacity-60"></div>
@@ -185,7 +184,7 @@
             </div>
           </div>
         </div>
-        <div class="flex justify-center md:absolute -bottom-16">
+        <div class=" flex justify-center md:absolute -bottom-16">
           <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-7 w-3/4 bg-white">
             <!-- card 1 -->
             <div class="card bg-white">
@@ -701,7 +700,7 @@
         >
           <div class="hero-overlay bg-opacity-60 bg-black"></div>
           <div class="hero-content text-center text-neutral-content">
-            <div class="max-w-md">
+            <div class="max-w-md ">
               <h1 class="mb-5 text-5xl font-extrabold text-white">Meet the team section</h1>
               <p class="mb-5">
                 Contrary to popular belief, is not simply random text. It has
