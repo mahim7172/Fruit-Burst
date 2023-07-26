@@ -58,6 +58,32 @@
             </div>
           </div>
         </div>
+        <!-- mobile navber -->
+        <div class="navbar bg-[#F85559] lg:hidden text-white py-2 px-6">
+          <div class="flex-none">
+            <img class="w-10 mr-4" src="./images/logo.png" alt="" />
+          </div>
+          <div class="flex-1">
+            <h2 class="text-2xl font-bold ">Fruit Burst</h2>
+          </div>
+          <div class="flex-none">
+            <button class="btn btn-square btn-ghost">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block w-5 h-5 stroke-current"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
       </section>
     </header>
     <main>
@@ -187,8 +213,8 @@
             </div>
           </div>
         </div>
-        <div class="flex justify-center md:absolute -bottom-16">
-          <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-7 w-3/4 bg-white">
+        <div class="hidden lg:block flex justify-center md:absolute -bottom-16 left-60">
+          <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-7 w-4/5 bg-white justify-center">
             <!-- card 1 -->
             <div class="card bg-white">
               <figure class="px-10 pt-10">
@@ -239,7 +265,7 @@
       </section>
       <!-- Deal of the day section -->
       <section class="container mx-auto mt-40">
-        <div class="md:flex md:justify-between">
+        <div class=" hidden md:flex md:justify-between">
           <div>
             <h2 class="text-5xl font-extrabold mb-6">Deal of the day</h2>
             <p class="text-gray-600 font-normal mt-5">
@@ -249,6 +275,44 @@
             </p>
           </div>
           <div class="text-center mt-5">
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value: 29"></span>:
+                </span>
+                days
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value: 15"></span>:
+                </span>
+                hours
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value: 25"></span>:
+                </span>
+                min
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value: 08"></span>
+                </span>
+                sec
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="  md:hidden">
+          <div>
+            <h2 class="text-5xl font-extrabold mb-6 text-center">Deal of the day</h2>
+            <p class="text-gray-600 font-normal mt-5 text-center">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical <br />
+              Latin literature from 45 BC, making it over 2000 years old.
+            </p>
+          </div>
+          <div class="text-center mt-5 flex justify-center ">
             <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
               <div class="flex flex-col">
                 <span class="countdown font-mono text-5xl">
@@ -805,8 +869,8 @@
         <h3 class="font-extrabold text-5xl text-center mb-5">Why Choose Us</h3>
         <p class="font-medium text-gray-500 text-center">
           Contrary to popular belief, is not simply random text. It has roots in
-          a piece of classical
-          Latin literature from 45 BC, making it over 2000 years old.
+          a piece of classical Latin literature from 45 BC, making it over 2000
+          years old.
         </p>
         <div class="hidden md:flex md:block mt-10 gap-10">
           <div class="gap-5">
@@ -825,8 +889,8 @@
                 </h2>
 
                 <p class="font-medium text-gray-500">
-                  Professional employees are there for you to pick 
-                  the most amazing and fresh fruits.
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
                 </p>
               </div>
             </div>
@@ -845,8 +909,8 @@
                 </h2>
 
                 <p class="font-medium text-gray-500">
-                  Professional employees are there for you to pick 
-                  the most amazing and fresh fruits.
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
                 </p>
               </div>
             </div>
@@ -865,27 +929,28 @@
                 </h2>
 
                 <p class="font-medium text-gray-500">
-                  Professional employees are there for you to pick
-                  the most amazing and fresh fruits.
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
                 </p>
               </div>
             </div>
           </div>
           <div>
-            <img src="./images/whychoose1.png" alt="">
+            <img src="./images/whychoose1.png" alt="" />
           </div>
           <div class="gap-5">
             <!-- card 1 -->
             <div class="flex gap-4">
-           
               <div>
-                <h2 class="font-extrabold text-base mb-4 border-b-2 pb-5  text-right">
+                <h2
+                  class="font-extrabold text-base mb-4 border-b-2 pb-5 text-right"
+                >
                   Integrated Supplier
                 </h2>
 
                 <p class="font-medium text-gray-500 text-right">
-                  Professional employees are there for you to pick 
-                  the most amazing and fresh fruits.
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
                 </p>
               </div>
               <div>
@@ -898,15 +963,16 @@
             </div>
             <!-- card 2 -->
             <div class="flex gap-4">
-              
               <div>
-                <h2 class="font-extrabold text-base mb-4 border-b-2 pb-5 text-right">
+                <h2
+                  class="font-extrabold text-base mb-4 border-b-2 pb-5 text-right"
+                >
                   Fresh is Best
                 </h2>
 
                 <p class="font-medium text-gray-500 text-right">
-                  Professional employees are there for you to pick
-                  the most amazing and fresh fruits.
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
                 </p>
               </div>
               <div>
@@ -919,15 +985,16 @@
             </div>
             <!-- card 3 -->
             <div class="flex gap-4">
-              
               <div>
-                <h2 class="font-extrabold text-base mb-4 border-b-2 pb-5 text-right">
+                <h2
+                  class="font-extrabold text-base mb-4 border-b-2 pb-5 text-right"
+                >
                   The Benefits Only
                 </h2>
 
                 <p class="font-medium text-gray-500 text-right">
-                  Professional employees are there for you to pick 
-                  the most amazing and fresh fruits.
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
                 </p>
               </div>
               <div>
@@ -940,8 +1007,144 @@
             </div>
           </div>
         </div>
+        <div class="md:hidden items-center mx-auto">
+          <div>
+            <img class="mx-auto" src="./images/whychoose1.png" alt="" />
+          </div>
+          <div>
+            <!-- card 1 -->
+            <div class="card bg-white">
+              <figure class="px-10 pt-10">
+                <img
+                  src="./images/group-chat.png"
+                  alt="Shoes"
+                  class="rounded-full border-2 w-10 bg-slate-200"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title border-b-2 pb-5">Dedicated Team</h2>
+                <p class="justify-center font-medium text-gray-500">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="card bg-white">
+              <figure class="px-10 pt-10">
+                <img
+                  src="./images/heart.png"
+                  alt="Shoes"
+                  class="rounded-full border-2 w-10 bg-slate-200"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title border-b-2 pb-5">Fresh is Best</h2>
+                <p class="justify-center font-medium text-gray-500">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="card bg-white">
+              <figure class="px-10 pt-10">
+                <img
+                  src="./images/giftbox.png"
+                  alt="Shoes"
+                  class="rounded-full border-2 w-10 bg-slate-200"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title border-b-2 pb-5">Gift Certificates</h2>
+                <p class="justify-center font-medium text-gray-500">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+            <!-- card 4 -->
+            <div class="card bg-white">
+              <figure class="px-10 pt-10">
+                <img
+                  src="./images/fruit.png"
+                  alt="Shoes"
+                  class="rounded-full border-2 w-10 bg-slate-200"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title border-b-2 pb-5">Dedicated Team</h2>
+                <p class="justify-center font-medium text-gray-500">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+            <!-- card 5 -->
+            <div class="card bg-white">
+              <figure class="px-10 pt-10">
+                <img
+                  src="./images/ice-cream.png"
+                  alt="Shoes"
+                  class="rounded-full border-2 w-10 bg-slate-200"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title border-b-2 pb-5">Sustainable Practice</h2>
+                <p class="justify-center font-medium text-gray-500">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+            <!-- card 6 -->
+            <div class="card bg-white">
+              <figure class="px-10 pt-10">
+                <img
+                  src="./images/like.png"
+                  alt="Shoes"
+                  class="rounded-full border-2 w-10 bg-slate-200"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title border-b-2 pb-5">The Benefits Only</h2>
+                <p class="justify-center font-medium text-gray-500">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+      
     </main>
-    <footer></footer>
+   
+
+<footer class="footer footer-center p-10 bg-black text-primary-content">
+  <div>
+    <div class="flex justify-center">
+      <img class="h-10 w-auto mr-5" src="./images/logo.png" alt="">
+      <h2 class="text-4xl font-bold text-white">Fruit Burst</h2>
+    </div>
+  </div> 
+  <ul class="menu menu-horizontal bg-black text-white ">
+    <li><a>Home</a></li>
+    <li><a>About Us</a></li>
+    <li><a>Shop</a></li>
+    <li><a>All Fruits</a></li>
+   
+  </ul>
+  <div>
+    <div class="grid grid-flow-col gap-4">
+      <a><img class="w-10" src="./images/facebook.png" alt=""></a>
+      <a><img class="w-10" src="./images/twitter.png" alt=""></a>
+      <a><img class="w-10" src="./images/instagram.png" alt=""></a>
+      <a><img class="w-10" src="./images/youtube.png" alt=""></a>
+      
+    </div>
+  </div>
+</footer>
+    
   </body>
 </html>
